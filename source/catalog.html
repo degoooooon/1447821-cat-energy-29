@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page-catalog" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__link" href="#">
-        <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип бренда Cat Energy.">
-        <img class="main-header__logo-name" src="#" width="101" height="18" alt="Текстовый логотип бренда Cat Energy.">
+  <body class="page__body-catalog">
+    <header class="page-header">
+      <a class="page-header__link" href="#">
+        <img class="page-header__logo-image" src="#" width="33" height="38" alt="Логотип бренда Cat Energy.">
+        <img class="page-header__logo-name" src="#" width="101" height="18" alt="Текстовый логотип бренда Cat Energy.">
       </a>
-      <nav>
-        <button class="main-nav__toggle" type="button">
+      <nav class="page-nav">
+        <button class="page-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+        <div class="page-nav__wrapper">
+          <ul class="page-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a href="#">
                 Главная
@@ -36,268 +36,141 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section class="catalog">
-        <h1 class="visually-hidden">Каталог продукции Cat Energy с описанием и ценой.</h1>
-        <div class="catalog__wrapper container">
-          <h2 class="catalog__title title title--primary">Каталог продукции</h2>
-          <ul class="catalog__list cards">
-            <li class="cards__item card">
-              <a class="card__image-link" href="#">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog/product-1-tablet.png 1x, img/catalog/product-1-tablet@2x.png 2x" width="161" height="172">
-                  <img class="card__image" src="img/catalog/product-1-phone.png" srcset="img/catalog/product-1-phone@2x.png 2x" width="68" height="86" alt="">
-                </picture>
-              </a>
-              <a class="card__caption-link" href="#" tabindex="-1">
-                <h3 class="card__caption">Cat Energy Pro 500&nbsp;г</h3>
-              </a>
-              <dl class="card__feature-list">
-                <div class="card__feature-item">
-                  <dt class="card__value">Масса</dt>
-                  <dd class="card__amount">500&nbsp;г</dd>
-                </div>
-                <div class="card__feature-item">
-                  <dt class="card__value">Вкус</dt>
-                  <dd class="card__amount">Курица</dd>
-                </div>
-                <div class="card__feature-item">
-                  <dt class="card__value">Цена</dt>
-                  <dd class="card__amount">700&nbsp;₽</dd>
-                </div>
-              </dl>
-              <button class="card__button button button--primary" type="button">Заказать</button>
-            </li>
-            <li class="cards__item card">
-              <a class="card__image-link" href="#">
-                <picture>
-                  <source media="(min-width: 1280px)" srcset="img/catalog/product-2-desktop.png 1x, img/catalog/product-2-desktop@2x.png 2x" width="172" height="196">
-                  <source media="(min-width: 768px)" srcset="img/catalog/product-2-tablet.png 1x, img/catalog/product-2-tablet@2x.png 2x" width="168" height="206">
-                  <img class="card__image card__image--big" src="img/catalog/product-2-phone.png" srcset="img/catalog/product-2-phone@2x.png 2x" width="84" height="100" alt="">
-                </picture>
-              </a>
-              <a class="card__caption-link" href="#" tabindex="-1">
-                <h3 class="card__caption">Cat Energy Pro 1000&nbsp;г</h3>
-              </a>
-              <dl class="card__feature-list">
-                <div class="card__feature-item">
-                  <dt class="card__value">Масса</dt>
-                  <dd class="card__amount">1000&nbsp;г</dd>
-                </div>
-                <div class="card__feature-item">
-                  <dt class="card__value">Вкус</dt>
-                  <dd class="card__amount">Курица</dd>
-                </div>
-                <div class="card__feature-item">
-                  <dt class="card__value">Цена</dt>
-                  <dd class="card__amount">1000&nbsp;₽</dd>
-                </div>
-              </dl>
-              <button class="card__button button button--primary" type="button">Заказать</button>
-            </li>
-            <li class="cards__item card">
-              <a class="card__image-link" href="#">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog/product-3-tablet.png 1x, img/catalog/product-3-tablet@2x.png 2x" width="163" height="174">
-                  <img class="card__image" src="img/catalog/product-3-phone.png" srcset="img/catalog/product-3-phone@2x.png 2x" width="68" height="78" alt="">
-                </picture>
-              </a>
-              <a class="card__caption-link" href="#" tabindex="-1">
-                <h3 class="card__caption">Cat Energy Pro 500&nbsp;г</h3>
-              </a>
-              <dl class="card__feature-list">
-                <div class="card__feature-item">
-                  <dt class="card__value">Масса</dt>
-                  <dd class="card__amount">500&nbsp;г</dd>
-                </div>
-                <div class="card__feature-item">
-                  <dt class="card__value">Вкус</dt>
-                  <dd class="card__amount">Рыба</dd>
-                </div>
-                <div class="card__feature-item">
-                  <dt class="card__value">Цена</dt>
-                  <dd class="card__amount">700&nbsp;₽</dd>
-                </div>
-              </dl>
-              <button class="card__button button button--primary" type="button">Заказать</button>
-            </li>
-            <li class="cards__item card">
-              <a class="card__image-link" href="#">
-                <picture>
-                  <source media="(min-width: 1280px)" srcset="img/catalog/product-4-desktop.png 1x, img/catalog/product-4-desktop@2x.png 2x" width="172" height="196">
-                  <source media="(min-width: 768px)" srcset="img/catalog/product-4-tablet.png 1x, img/catalog/product-4-tablet@2x.png 2x" width="168" height="200">
-                  <img class="card__image card__image--big" src="img/catalog/product-4-phone.png" srcset="img/catalog/product-4-phone@2x.png 2x" width="84" height="100" alt="">
-                </picture>
-              </a>
-              <a class="card__caption-link" href="#" tabindex="-1">
-                <h3 class="card__caption">Cat Energy Pro 1000&nbsp;г</h3>
-              </a>
-              <dl class="card__feature-list">
-                <div class="card__feature-item">
-                  <dt class="card__value">Масса</dt>
-                  <dd class="card__amount">1000&nbsp;г</dd>
-                </div>
-                <div class="card__feature-item">
-                  <dt class="card__value">Вкус</dt>
-                  <dd class="card__amount">Рыба</dd>
-                </div>
-                <div class="card__feature-item">
-                  <dt class="card__value">Цена</dt>
-                  <dd class="card__amount">1000&nbsp;₽</dd>
-                </div>
-              </dl>
-              <button class="card__button button button--primary" type="button">Заказать</button>
-            </li>
-            <li class="cards__item card">
-              <a class="card__image-link" href="#">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog/product-5-tablet.png 1x, img/catalog/product-5-tablet@2x.png 2x" width="161" height="171">
-                  <img class="card__image" src="img/catalog/product-5-phone.png" srcset="img/catalog/product-5-phone@2x.png 2x" width="68" height="78" alt="">
-                </picture>
-              </a>
-              <a class="card__caption-link" href="#" tabindex="-1">
-                <h3 class="card__caption">Cat Energy Pro 500&nbsp;г</h3>
-              </a>
-              <dl class="card__feature-list">
-                <div class="card__feature-item">
-                  <dt class="card__value">Масса</dt>
-                  <dd class="card__amount">500&nbsp;г</dd>
-                </div>
-                <div class="card__feature-item">
-                  <dt class="card__value">Вкус</dt>
-                  <dd class="card__amount">Гречка</dd>
-                </div>
-                <div class="card__feature-item">
-                  <dt class="card__value">Цена</dt>
-                  <dd class="card__amount">400&nbsp;₽</dd>
-                </div>
-              </dl>
-              <button class="card__button button button--primary" type="button">Заказать</button>
-            </li>
-            <li class="cards__item card">
-              <a class="card__image-link" href="#">
-                <picture>
-                  <source media="(min-width: 1280px)" srcset="img/catalog/product-6-desktop.png 1x, img/catalog/product-6-desktop@2x.png 2x" width="172" height="196">
-                  <source media="(min-width: 768px)" srcset="img/catalog/product-6-tablet.png 1x, img/catalog/product-6-tablet@2x.png 2x" width="168" height="200">
-                  <img class="card__image card__image--big" src="img/catalog/product-6-phone.png" srcset="img/catalog/product-6-phone@2x.png 2x" width="84" height="100" alt="">
-                </picture>
-              </a>
-              <a class="card__caption-link" href="#" tabindex="-1">
-                <h3 class="card__caption">Cat Energy Pro 1000&nbsp;г</h3>
-              </a>
-              <dl class="card__feature-list">
-                <div class="card__feature-item">
-                  <dt class="card__value">Масса</dt>
-                  <dd class="card__amount">1000&nbsp;г</dd>
-                </div>
-                <div class="card__feature-item">
-                  <dt class="card__value">Вкус</dt>
-                  <dd class="card__amount">Гречка</dd>
-                </div>
-                <div class="card__feature-item">
-                  <dt class="card__value">Цена</dt>
-                  <dd class="card__amount">700&nbsp;₽</dd>
-                </div>
-              </dl>
-              <button class="card__button button button--primary" type="button">Заказать</button>
-            </li>
-            <li class="cards__item card">
-              <a class="card__image-link" href="#">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog/product-7-tablet.png 1x, img/catalog/product-7-tablet@2x.png 2x" width="163" height="174">
-                  <img class="card__image" src="img/catalog/product-7-phone.png" srcset="img/catalog/product-7-phone@2x.png 2x" width="72" height="84" alt="">
-                </picture>
-              </a>
-              <a class="card__caption-link" href="#" tabindex="-1">
-                <h3 class="card__caption">Cat Energy Slim 500&nbsp;г</h3>
-              </a>
-              <dl class="card__feature-list">
-                <div class="card__feature-item">
-                  <dt class="card__value">Масса</dt>
-                  <dd class="card__amount">500&nbsp;г</dd>
-                </div>
-                <div class="card__feature-item">
-                  <dt class="card__value">Вкус</dt>
-                  <dd class="card__amount">Рис</dd>
-                </div>
-                <div class="card__feature-item">
-                  <dt class="card__value">Цена</dt>
-                  <dd class="card__amount">500&nbsp;₽</dd>
-                </div>
-              </dl>
-              <button class="card__button button button--primary" type="button">Заказать</button>
-            </li>
-            <li class="cards__item showing">
-              <p class="showing__title">Показать еще 100500 товаров</p>
-              <p class="showing__description">На самом деле вкусов гораздо больше!</p>
-              <button class="showing__button button button--secondary" type="button">Показать&nbsp;все</button>
-            </li>
-          </ul>
-        </div>
+    <main class="catalog">
+      <h1 class="catalog__title title">Каталог продукции</h1>
+      <section class="catalog-product">
+        <h2 class="visually-hidden">Список товаров</h2>
+        <ul class="catalog__wrapper">
+          <li>
+            <h3>Cat Energy Pro 500 г</h3>
+            <dl>
+              <dt>Масса</dt>
+              <dd>500 г</dd>
+              <dt>Вкус</dt>
+              <dd>Курица</dd>
+              <dt>Цена</dt>
+              <dd>700 Р.</dd>
+            </dl>
+            <a href="">Заказать</a>
+          </li>
+          <li>
+            <h3>Cat Energy Pro 1000 г</h3>
+            <dl>
+              <dt>Масса</dt>
+              <dd>1000 г</dd>
+              <dt>Вкус</dt>
+              <dd>Курица</dd>
+              <dt>Цена</dt>
+              <dd>1000 Р.</dd>
+            </dl>
+            <a href="">Заказать</a>
+          </li>
+          <li>
+            <h3>Cat Energy Pro 500 г</h3>
+            <dl>
+              <dt>Масса</dt>
+              <dd>500 г</dd>
+              <dt>Вкус</dt>
+              <dd>Рыба</dd>
+              <dt>Цена</dt>
+              <dd>700 Р.</dd>
+            </dl>
+            <a href=""></a>
+          </li>
+          <li>
+            <h3>Cat Energy Pro 1000 г</h3>
+            <dl>
+              <dt>Масса</dt>
+              <dd>1000 г</dd>
+              <dt>Вкус</dt>
+              <dd>Рыба</dd>
+              <dt>Цена</dt>
+              <dd>1000 Р.</dd>
+            </dl>
+            <a href=""></a>
+          </li>
+          <li>
+            <h3>Cat Energy Slim 500 г</h3>
+            <dl>
+              <dt>Масса</dt>
+              <dd>500 г</dd>
+              <dt>Вкус</dt>
+              <dd>Гречка</dd>
+              <dt>Цена</dt>
+              <dd>400 Р.</dd>
+            </dl>
+            <a href=""></a>
+          </li>
+          <li>
+            <h3>Cat Energy Slim 1000 г</h3>
+            <dl>
+              <dt>Масса</dt>
+              <dd>1000 г</dd>
+              <dt>Вкус</dt>
+              <dd>Гречка</dd>
+              <dt>Цена</dt>
+              <dd>700 Р.</dd>
+            </dl>
+            <a href=""></a>
+          </li>
+          <li>
+            <h3>Cat Energy Slim 500 г</h3>
+            <dl>
+              <dt>Масса</dt>
+              <dd>500 г</dd>
+              <dt>Вкус</dt>
+              <dd>Рис</dd>
+              <dt>Цена</dt>
+              <dd>500 Р.</dd>
+            </dl>
+            <a href=""></a>
+          </li>
+          <li>
+            <h3>Показать еще 100500 товаров</h3>
+            <p>На самом деле вкусов гораздо больше!</p>
+            <a href="product.html">Показать все</a>
+          </li>
+        </ul>
       </section>
-      <section class="extra-products">
-        <div class="extra-products__wrapper container">
-          <h2 class="extra-products__title">Дополнительные товары</h2>
-          <ul class="extra-products__list extras">
-            <li class="extras__item">
-              <h3 class="extras__caption">Сахарозаменитель</h3>
-              <dl class="extras__features">
-                <dt class="visually-hidden">Количество.</dt>
-                <dd class="extras__value">1&nbsp;упаковка (100&nbsp;г)</dd>
-                <dt class="visually-hidden">Цена.</dt>
-                <dd class="extras__price">200&nbsp;₽</dd>
-              </dl>
-              <button class="extras__button button button--primary" type="button">Заказать</button>
-            </li>
-            <li class="extras__item">
-              <h3 class="extras__caption">Питьевая вода</h3>
-              <dl class="extras__features">
-                <dt class="visually-hidden">Количество.</dt>
-                <dd class="extras__value">5&nbsp;литров</dd>
-                <dt class="visually-hidden">Цена.</dt>
-                <dd class="extras__price">50&nbsp;₽</dd>
-              </dl>
-              <button class="extras__button button button--primary" type="button">Заказать</button>
-            </li>
-            <li class="extras__item">
-              <h3 class="extras__caption">Молоко</h3>
-              <dl class="extras__features">
-                <dt class="visually-hidden">Количество.</dt>
-                <dd class="extras__value">1&nbsp;литр</dd>
-                <dt class="visually-hidden">Цена.</dt>
-                <dd class="extras__price">100&nbsp;₽</dd>
-              </dl>
-              <button class="extras__button button button--primary" type="button">Заказать</button>
-            </li>
-            <li class="extras__item">
-              <h3 class="extras__caption">Витамины</h3>
-              <dl class="extras__features">
-                <dt class="visually-hidden">Количество.</dt>
-                <dd class="extras__value">1&nbsp;упаковка (30&nbsp;г)</dd>
-                <dt class="visually-hidden">Цена.</dt>
-                <dd class="extras__price">300&nbsp;₽</dd>
-              </dl>
-              <button class="extras__button button button--primary" type="button">Заказать</button>
-            </li>
-          </ul>
-          <div class="catalog__promotion promotion">
-            <p class="promotion__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
-          </div>
-        </div>
-      </section>
-      <section class="contacts contacts--secondary">
-        <div class="contacts__wrapper container">
-          <h2 class="visually-hidden">Расположение магазина.</h2>
-          <p class="contacts__headline">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-          <address class="contacts__address">
-            <span class="contacts__text">ул. Большая Конюшенная, д. 19/8</span>
-            <span class="contacts__text">Санкт-Петербург</span>
-          </address>
-        </div>
-        <div class="contacts__map map" id="map" style=""><ymaps class="ymaps-2-1-79-map" style="width: 316px; height: 362px;"><ymaps class="ymaps-2-1-79-map ymaps-2-1-79-i-ua_js_yes ymaps-2-1-79-map-bg ymaps-2-1-79-islets_map-lang-ru" style="width: 316px; height: 362px; z-index: 0;"><ymaps class="ymaps-2-1-79-inner-panes"><ymaps class="ymaps-2-1-79-events-pane ymaps-2-1-79-user-selection-none" unselectable="on" style="height: 100%; width: 100%; top: 0px; left: 0px; position: absolute; z-index: 2500; cursor: url(&quot;https://api-maps.yandex.ru/2.1.79/build/release/images/cursor/grab.cur&quot;) 16 16, url(&quot;https://api-maps.yandex.ru/2.1.79/build/release/images/cursor/grab.cur&quot;), move;"></ymaps><ymaps class="ymaps-2-1-79-ground-pane" style="top: 0px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 1); z-index: 501;"><ymaps style="z-index: 150; position: absolute;"><ymaps style="position: absolute; left: 0px; top: 0px;"><ymaps unselectable="on" class="ymaps-2-1-79-user-selection-none" style="position: absolute; background-repeat: no-repeat; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=23.08.20-0-b230722061630&amp;x=9571&amp;y=4778&amp;z=14&amp;scale=1&amp;lang=ru_RU&amp;apikey=f0efd25a-59f7-45f0-a011-7aea5b12191f&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 51px; top: 41px;"></ymaps><ymaps unselectable="on" class="ymaps-2-1-79-user-selection-none" style="position: absolute; background-repeat: no-repeat; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=23.08.20-0-b230722061630&amp;x=9570&amp;y=4778&amp;z=14&amp;scale=1&amp;lang=ru_RU&amp;apikey=f0efd25a-59f7-45f0-a011-7aea5b12191f&amp;ads=enabled&quot;); width: 256px; height: 256px; left: -205px; top: 41px;"></ymaps><ymaps unselectable="on" class="ymaps-2-1-79-user-selection-none" style="position: absolute; background-repeat: no-repeat; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=23.08.20-0-b230722061630&amp;x=9572&amp;y=4778&amp;z=14&amp;scale=1&amp;lang=ru_RU&amp;apikey=f0efd25a-59f7-45f0-a011-7aea5b12191f&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 307px; top: 41px;"></ymaps><ymaps unselectable="on" class="ymaps-2-1-79-user-selection-none" style="position: absolute; background-repeat: no-repeat; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=23.08.20-0-b230722061630&amp;x=9570&amp;y=4777&amp;z=14&amp;scale=1&amp;lang=ru_RU&amp;apikey=f0efd25a-59f7-45f0-a011-7aea5b12191f&amp;ads=enabled&quot;); width: 256px; height: 256px; left: -205px; top: -215px;"></ymaps><ymaps unselectable="on" class="ymaps-2-1-79-user-selection-none" style="position: absolute; background-repeat: no-repeat; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=23.08.20-0-b230722061630&amp;x=9570&amp;y=4779&amp;z=14&amp;scale=1&amp;lang=ru_RU&amp;apikey=f0efd25a-59f7-45f0-a011-7aea5b12191f&amp;ads=enabled&quot;); width: 256px; height: 256px; left: -205px; top: 297px;"></ymaps><ymaps unselectable="on" class="ymaps-2-1-79-user-selection-none" style="position: absolute; background-repeat: no-repeat; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=23.08.20-0-b230722061630&amp;x=9571&amp;y=4777&amp;z=14&amp;scale=1&amp;lang=ru_RU&amp;apikey=f0efd25a-59f7-45f0-a011-7aea5b12191f&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 51px; top: -215px;"></ymaps><ymaps unselectable="on" class="ymaps-2-1-79-user-selection-none" style="position: absolute; background-repeat: no-repeat; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=23.08.20-0-b230722061630&amp;x=9572&amp;y=4779&amp;z=14&amp;scale=1&amp;lang=ru_RU&amp;apikey=f0efd25a-59f7-45f0-a011-7aea5b12191f&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 307px; top: 297px;"></ymaps><ymaps unselectable="on" class="ymaps-2-1-79-user-selection-none" style="position: absolute; background-repeat: no-repeat; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=23.08.20-0-b230722061630&amp;x=9571&amp;y=4779&amp;z=14&amp;scale=1&amp;lang=ru_RU&amp;apikey=f0efd25a-59f7-45f0-a011-7aea5b12191f&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 51px; top: 297px;"></ymaps><ymaps unselectable="on" class="ymaps-2-1-79-user-selection-none" style="position: absolute; background-repeat: no-repeat; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=23.08.20-0-b230722061630&amp;x=9572&amp;y=4777&amp;z=14&amp;scale=1&amp;lang=ru_RU&amp;apikey=f0efd25a-59f7-45f0-a011-7aea5b12191f&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 307px; top: -215px;"></ymaps></ymaps></ymaps></ymaps><ymaps class="ymaps-2-1-79-copyrights-pane" style="height: 0px; inset: auto 0px 0px; position: absolute; z-index: 5002;"><ymaps class="ymaps-2-1-79-map-copyrights-promo"><ymaps><ymaps class="ymaps-2-1-79-gotoymaps" title="Как добраться"><ymaps class="ymaps-2-1-79-gotoymaps__container"><ymaps class="ymaps-2-1-79-gotoymaps__pin"></ymaps><ymaps class="ymaps-2-1-79-gotoymaps__text-container"><ymaps class="ymaps-2-1-79-gotoymaps__text">Как добраться</ymaps></ymaps></ymaps></ymaps><ymaps class="ymaps-2-1-79-gototaxi" title="Доехать на такси" style="display: none;"><ymaps class="ymaps-2-1-79-gototaxi__container"><ymaps class="ymaps-2-1-79-gototaxi__pin"></ymaps><ymaps class="ymaps-2-1-79-gototaxi__text-container" style="display: none;"><ymaps class="ymaps-2-1-79-gototaxi__text">На такси</ymaps></ymaps></ymaps></ymaps><a class="ymaps-2-1-79-gototech" target="_blank" href="https://tech.yandex.ru/maps/mapsapi/?from=api-maps " style="display: none;">API</a></ymaps></ymaps><ymaps><ymaps class="ymaps-2-1-79-copyright ymaps-2-1-79-copyright_logo_no" style=""><ymaps class="ymaps-2-1-79-copyright__fog">…</ymaps><ymaps class="ymaps-2-1-79-copyright__wrap"><ymaps class="ymaps-2-1-79-copyright__layout"><ymaps class="ymaps-2-1-79-copyright__content-cell"><ymaps class="ymaps-2-1-79-copyright__content"><ymaps class="ymaps-2-1-79-copyright__text">© Яндекс</ymaps><ymaps class="ymaps-2-1-79-copyright__agreement">&nbsp;<a class="ymaps-2-1-79-copyright__link" target="_blank" href="https://yandex.ru/legal/maps_termsofuse/?lang=ru" rel="noopener">Условия</a></ymaps></ymaps></ymaps><ymaps class="ymaps-2-1-79-copyright__logo-cell"><a class="ymaps-2-1-79-copyright__logo" href="" target="_blank"></a></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps class="ymaps-2-1-79-controls-pane" style="width: 100%; top: 0px; left: 0px; position: absolute; z-index: 4503;"><ymaps class="ymaps-2-1-79-controls__toolbar" style="margin-top: 10px;"><ymaps class="ymaps-2-1-79-controls__toolbar_left"></ymaps><ymaps class="ymaps-2-1-79-controls__toolbar_right"></ymaps></ymaps><ymaps class="ymaps-2-1-79-controls__bottom" style="top: 362px;"></ymaps></ymaps><ymaps class="ymaps-2-1-79-places-pane" style="top: 0px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 1); z-index: 2004;"><ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on" style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 316px; top: 198px;"><ymaps><ymaps class="ymaps-2-1-79-image " style="position: absolute; left: -19px; top: -44px; width: 113px; height: 106px; opacity: 1; background-position: 0px 0px; background-size: 113px 106px; background-image: url(&quot;https://htmlacademy-adaptive.github.io/2126165-cat-energy-29/6/img/pin.svg&quot;);"></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></div>
+      <section class="additional-products">
+        <h2 class="additional__title additional__title--view">Дополнительные товары</h2>
+        <ul>
+          <li>
+            <h3>Сахарозаменитель</h3>
+            <p>1 упаковка (100 г)</p>
+            <p>200 &#8381;</p>
+            <a href="">Заказать</a>
+          </li>
+          <li>
+            <h3>Питьевая вода</h3>
+            <p>5 литров</p>
+            <p>50 &#8381;</p>
+            <a href="">Заказать</a>
+          </li>
+          <li>
+            <h3>Молоко</h3>
+            <p>1 литр</p>
+            <p>100 &#8381;</p>
+            <a href="">Заказать</a>
+          </li>
+          <li>
+            <h3>Витамины</h3>
+            <p>1 упаковка (30 г)</p>
+            <p>300 &#8381;</p>
+            <a href="">Заказать</a>
+          </li>
+        </ul>
+        <aside class="">
+          <img src="#">
+          <p>Закажите все и получите чехол для кота в подарок!</p>
+        </aside>
       </section>
     </main>
     <footer class="main-footer">
+      <address>
+        <p>Приглашаем к сотрудничеству дилеров!</p>
+        <p><span>ул. Большая Конюшенная, д. 19/8</span><span>Санкт-Петербург</span></p>
+      </address>
       <div class="footer-links__wrapper">
         <span class="footer-links__home">
           <img class="footer-links__logo" src="#" width="128" height="24" alt="Текстовый логотип бренда Cat Energy.">
@@ -332,20 +205,10 @@
           <a class="footer-links__academy-link" href="#">
             <div class="footer-links__academy-wrapper">
               <span class="footer-links__academy-text">HTML Academy</span>
-              <svg class="footer-links__academy-logo" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34" fill="none">
-                <g clip-path="url(#clip0_93075_226)">
-                  <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"></path>
-                </g>
-                <defs>
-                  <clipPath id="clip0_93075_226">
-                    <rect width="27" height="34" fill="white"></rect>
-                  </clipPath>
-                </defs>
-              </svg>
             </div>
           </a>
         </div>
       </div>
     </footer>
-</body>
+  </body>
 </html>
