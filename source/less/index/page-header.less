@@ -1,0 +1,126 @@
+.page-header {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/cat-green.jpg"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: auto 302px;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+    position: relative;
+  }
+}
+
+.page__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 27px;
+  color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    color: @basic-black;
+    align-items: flex-start;
+    padding: 40px 200px 526px 90px;
+    position: relative;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 81px 724px 184px 80px;
+  }
+}
+
+.page-main__slogan {
+  font-weight: 400;
+  margin: 0;
+  font-size: @font-size;
+  line-height: @font-size;
+  text-align: center;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    margin-bottom: 37px;
+  }
+}
+
+.page-main__intro {
+  margin-top: 0;
+  margin-bottom: 29px;
+  font-size: @font-pix;
+  line-height: @font-pix;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+.page-main__image {
+  margin-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: calc(50% - 162px);
+    top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__header {
+    margin-bottom: 82px;
+  }
+}
+
+.page-main__button {
+  font-size: 16px;
+  padding: 10px 64px;
+  order: 4;
+
+
+  @media (min-width: @tablet-width) {
+    padding: 14px 26px;
+    order: 0;
+    font-size: 20px;
+    line-height: 26px;
+    z-index: 1;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .promo__header {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__content::after {
+    content: "";
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/index-green-dectop.png"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+    position: absolute;
+    width: 50%;
+    top: -148px;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    background-color: #63a63b;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__content {
+    position: initial;
+  }
+}

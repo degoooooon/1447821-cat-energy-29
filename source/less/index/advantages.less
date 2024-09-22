@@ -1,0 +1,124 @@
+.page__advantages {
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @basic-grey;
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    border: none;
+    margin-bottom: 73px;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    line-height: 60px;
+    font-size: 60px;
+    margin-bottom: 70px;
+  }
+}
+
+.advantages__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  display: grid;
+  row-gap: 20px;
+  counter-reset: section;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    column-gap: 130px;
+    margin-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    margin: 0;
+    column-gap: 75px;
+  }
+}
+
+.advantages__item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  column-gap: 20px;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr;
+    gap: 30px;
+    padding-bottom: 55px;
+
+    &::after {
+      position: absolute;
+      left: 110px;
+      top: 90px;
+      color: @basic-grey;
+      font-size: 280px;
+      font-family: "Oswald", sans-serif;
+      counter-increment: section;
+      content: counter(section);
+      z-index: -1;
+    }
+  }
+
+  &--leaf::before {
+    background-image: url("../../img/icon-leaf.svg");
+  }
+
+  &--powder::before {
+    background-image: url("../../img/icon-powder.svg");
+  }
+
+  &--eat::before {
+    background-image: url("../../img/icon-eat.svg");
+  }
+
+  &--scales::before {
+    background-image: url("../../img/icon-scales.svg");
+  }
+
+  &::before {
+    content: "";
+    background-color: @basic-green;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.advantages__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Lato", sans-serif;
+  color: @dark-gray;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 250px;
+  }
+}

@@ -1,0 +1,160 @@
+.nutrition__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 71px;
+  }
+}
+
+.nutrition__item {
+  background-color: @basic-grey;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  padding: 23px 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+    padding: 77px 63px 53px 52px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 77px 52px 60px;
+    width: 570px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .nutrition__item:last-child {
+    margin-bottom: 45px;
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+    }
+  }
+}
+
+.nutrition__title {
+  margin: 0;
+  display: flex;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 163px;
+    margin-bottom: 73px;
+  }
+}
+
+.nutrition__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @dark-gray;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 22px;
+  padding-bottom: 23px;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    border: 0;
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    margin-bottom: 55px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 28px;
+    width: 462px;
+  }
+}
+
+.nutrition__item--weight-loss::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 53px;
+  margin-right: 20px;
+  background-image: url("../../img/cat-back.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 211px;
+    background-image: url("../../img/cat-back-decptop.svg");
+    margin: 0;
+    position: absolute;
+    right: 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/cat-circle-green.svg");
+    width: 100px;
+    height: 106px;
+    top: 42px;
+    left: 53px;
+  }
+}
+
+.nutrition__item--weight-gain::before {
+  content: "";
+  display: block;
+  width: 67px;
+  height: 50px;
+  background-image: url("../../img/cat-slim.svg");
+  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 200px;
+    background-image: url("../img/cat-slim-decptop.svg");
+    margin: 0;
+    position: absolute;
+    right: 29px;
+    bottom: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/panther-circle-green.png");
+    width: 134px;
+    height: 100px;
+    top: 48px;
+    left: 33px;
+  }
+}
+
+.nutrition__for-everyone {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
