@@ -1,0 +1,41 @@
+.bonus {
+  background-image: url("../img/catalog/cat-basket.png");
+  height: 290px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/catalog/cat-basket-tablet.jpg"),;
+    height: 200px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: right;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .bonus {
+    background-image: url("../img/catalog/cat-basket1@2x.png");
+  }
+}
+
+.bonus p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Lato", sans-serif;
+  color: @basic-white;
+  width: 161px;
+  text-align: center;
+}
+
+.bonus__img {
+  margin-top: 12px;
+}

@@ -1,4 +1,4 @@
-.page-header__nav {
+.header__nav {
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -14,15 +14,19 @@
   }
 }
 
+.header__link {
+  height: 38px;
+}
+
 .page__wrapper {
   width: 320px;
   position: relative;
   margin: 0 auto;
   display: flex;
-  padding: 13px 21px 14px 20px;
+  padding: 11px 20px 13px;
 }
 
-.page-header__logo-image {
+.header__logo-image {
   width: 100%;
 }
 
@@ -33,7 +37,7 @@
   padding: 12px 20px 14px 21px;
   justify-content: space-between;
   position: relative;
-  align-items: center;
+  align-items: baseline;
   width: 320px;
   margin: 0 auto;
 
@@ -48,7 +52,7 @@
   }
 }
 
-.page-header__logo-name {
+.header__logo-name {
   position: absolute;
   top: 50%;
   left: 50%;

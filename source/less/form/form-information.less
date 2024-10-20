@@ -1,0 +1,136 @@
+.form-information__wrapp {
+  display: flex;
+  column-gap: 20px;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    column-gap: 40px;
+    margin-bottom: 57px;
+  }
+
+  &::before {
+    content: "";
+    width: calc(50% - 160px);
+    border-bottom: 2px solid @basic-green;
+    height: 18px;
+
+    @media (min-width: @tablet-width) {
+      width: calc(50% - 355px);
+      height: 24px;
+    }
+  }
+
+  &::after {
+    content: "";
+    border-bottom: 2px solid @basic-green;
+    flex-grow: 1;
+    height: 18px;
+
+    @media (min-width: @tablet-width) {
+      height: 24px;
+    }
+  }
+}
+
+.form-information__list {
+  padding: 0;
+  list-style: none;
+  padding-bottom: 31px;
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 628px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+}
+
+.form-information__item-wrappe {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    grid-column: 1 / 3;
+    align-items: center;
+  }
+}
+
+.form-information__item-wrapp {
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.form-information__current {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  color: @dark-gray;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid @special-grey;
+
+    @media (min-width: @tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.form-information__checkbox:checked + .form-information__current::before {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/tick-tablet.svg");
+  }
+}
+
+.form-information__button {
+  padding: 12px 0;
+  font-size: 16px;
+  line-height: 16px;
+  border: 0;
+  font-family: "Oswald", sans-serif;
+  margin: 20px 0 23px;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 0;
+    max-width: 284px;
+    margin-top: 17px;
+  }
+}
+
+.form-information__span {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Lato", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    flex-grow: 1;
+    margin-right: 42px;
+    margin-top: -4px;
+  }
+}

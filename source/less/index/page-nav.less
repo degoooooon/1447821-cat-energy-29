@@ -75,7 +75,13 @@
   }
 }
 
-.page-nav__list a {
+@media (max-width: @mobile-width) {
+  .page-nav-toggle {
+    display: none;
+  }
+}
+
+.page-nav__title {
   padding: 22px 0 24px 0;
   display: block;
   color: @basic-black;
@@ -95,5 +101,11 @@
     font-size: 20px;
     line-height: 30px;
     color: @basic-white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-nav__title--active {
+    color: @block-grue-1;
   }
 }
