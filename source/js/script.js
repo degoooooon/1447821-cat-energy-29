@@ -1,7 +1,9 @@
 let pageNav = document.querySelector('.page-nav-header');
 let pageToggle = document.querySelector('.page-nav__toggle');
 
-pageToggle.onclick = function(){
+pageToggle.onclick = function() {
   pageNav.classList.toggle('page-nav-toggle');
+  pageToggle.classList.toggle('page-nav--close');
+  pageToggle.classList.toggle('page-nav--opened');
 };
 

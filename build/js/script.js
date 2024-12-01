@@ -1,0 +1,1 @@
+let pageNav=document.querySelector(".page-nav-header"),pageToggle=document.querySelector(".page-nav__toggle");pageToggle.onclick=function(){pageNav.classList.toggle("page-nav-toggle"),pageToggle.classList.toggle("page-nav--close"),pageToggle.classList.toggle("page-nav--opened")};

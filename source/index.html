@@ -2,43 +2,49 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="keywords" content="вёрстка, HTML, CSS, блог">
+    <meta name="description" content="Блог о процессе обучения веб-технологиям">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/icon32x32.png">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
     <body class="page__body">
       <header class="header">
-        <nav class="page-nav header__nav toggle-menu--close">
+        <nav class="page-nav header__nav">
           <div class="header__wrapper">
             <a class="header__link" href="index.html">
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/tablet/logo-pic.png 1x, img/tablet/logo-pic@2x 2x">
+                <source media="(min-width: 1440px)" srcset="img/logo-pic.png 1x, img/logo-pic@2x 2x">
                 <source media="(min-width: 768px)" srcset="img/logo-pic.png">
-                <img class="header__logo-image" src="./img/logo-mobile.svg" alt="Логотип бренда Cat Energy.">
+                <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип бренда Cat Energy.">
               </picture>
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/logo-text.svg">
                 <img class="header__logo-name" src="./img/energy.svg" alt="Текстовый логотип бренда Cat Energy.">
               </picture>
             </a>
-            <button class="page-nav__toggle" type="button">
+            <button class="page-nav__toggle page-nav--opened" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
           <ul class="page-nav-header page-nav__list page-nav-toggle">
-            <li class="page-nav__item page-nav__item--active">
-              <a class="page-nav__title" href="#">
+            <li class="page-nav__item">
+              <a class="page-nav__title page-nav__title--index page-nav__underline" href="#">
                 Главная
               </a>
             </li>
             <li class="page-nav__item">
-              <a class="page-nav__title" href="catalog.html">
+              <a class="page-nav__title page-nav__title--index" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="page-nav__item">
-              <a class="page-nav__title" href="form.html">
+              <a class="page-nav__title page-nav__title--index" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -57,8 +63,8 @@
             </p>
             <a class="page-main__button button" href="#"> Подобрать программу </a>
             <picture>
-              <source media="(min-width: 1440px)" srcset="./img/dectop/index-can.png 1x, ./img/dectop/index-can@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/tablet/index-can-tablet.png 1x, img/tablet/index-can-tablet1@2x.png 2x">
+              <source media="(min-width: 1440px)" srcset="img/index-can.png 1x, img/index-can@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/tablet/index-can-tablet1@2x.png 2x">
               <img class="page-main__image" src="img/food.png" alt="Продукт «кэт про энерджи курица»">
             </picture>
           </header>
@@ -80,70 +86,70 @@
               </li>
             </ul>
           </div>
-          </section>
-          <section class="page__advantages advantages">
-            <div class="container">
-              <h2 class="advantages__title">Как это работает</h2>
-              <ul class="advantages__list">
-                <li class="advantages__item advantages__item--leaf">
-                  <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
-                </li>
-                <li class="advantages__item advantages__item--powder">
-                  <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-                </li>
-                <li class="advantages__item advantages__item--eat">
-                  <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
-                </li>
-                <li class="advantages__item advantages__item--scales">
-                  <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section class="stats">
-            <div class="stats__wrap container">
-              <h2 class="stats__title">Живой пример</h2>
-              <div class="stats__conteiner">
-                <p class="stats__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-              <dl class="stats__wrapper">
-                <div class="stats__list">
-                  <dt class="stats__name">Снижение веса</dt>
-                  <dd class="stats__number">5 кг</dd>
-                </div>
-                <div class="stats__list">
-                  <dt class="stats__name">Затрачено времено</dt>
-                  <dd class="stats__number">60 дней</dd>
-                </div>
-              </dl>
-              <dl class="stats__wide">
-                <dt class="stats__text">Затраты на питание:</dt>
-                <dd class="stats__value">15 000 РУБ.</dd>
-              </dl>
+        </section>
+
+        <section class="page__advantages advantages">
+          <div class="container">
+            <h2 class="advantages__title">Как это работает</h2>
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--leaf">
+                <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
+              </li>
+              <li class="advantages__item advantages__item--powder">
+                <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+              </li>
+              <li class="advantages__item advantages__item--eat">
+                <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+              </li>
+              <li class="advantages__item advantages__item--scales">
+                <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="stats">
+          <div class="stats__wrap container">
+            <h2 class="stats__title">Живой пример</h2>
+            <div class="stats__conteiner">
+              <p class="stats__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <dl class="stats__wrapper">
+              <div class="stats__list">
+                <dt class="stats__name">Снижение веса</dt>
+                <dd class="stats__number">5 кг</dd>
               </div>
-              <picture>
-                <source media="(min-width: 768px)" srcset="./img/cat-slider-tablet.png">
-                <img class="gallery__img" src="img/cat-slider-mobile.png" alt="До и после">
-              </picture>
+              <div class="stats__list">
+                <dt class="stats__name">Затрачено времено</dt>
+                <dd class="stats__number">60 дней</dd>
+              </div>
+            </dl>
+            <dl class="stats__wide">
+              <dt class="stats__text">Затраты на питание:</dt>
+              <dd class="stats__value">15 000 РУБ.</dd>
+            </dl>
             </div>
-          </section>
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/cat-slider-tablet.png">
+              <img class="stats__img" src="img/cat-slider-mobile.png" alt="До и после">
+            </picture>
+          </div>
+        </section>
       </main>
       <footer class="main-footer">
         <div class="container">
-          <address class="main__adress">
-            <p class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</p>
-            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+          <address class="main-footer__adress">
+            <p class="main-footer__title">Приглашаем<br> к сотрудничеству дилеров!</p>
+            <p class="main-footer__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
           </address>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i102
-        4!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d82
-        38007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1
-        sru!2sru!4v1724119133432!5m2!1sru!2sru" width="1440" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1724119133432!5m2!1sru!2sru"
+        width="1440" height="362" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
-        <div class="footer-links__wrapper container">
+        <div class="main-footer__wrapper container">
           <a class="footer-links__home" href="#">
             <img class="footer-links__logo" src="../img/energy.svg" width="128" height="24" alt="Текстовый логотип бренда Cat Energy.">
           </a>
-          <ul class="footer-links__socials social-networks">
+          <ul class="main-footer__socials social-networks">
             <li class="social-networks__item">
               <a class="social-networks__link" href="https://vk.com/htmlacademy">
                 <svg class="social-networks__icon" width="28" height="22">
@@ -178,6 +184,6 @@
         </div>
       </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

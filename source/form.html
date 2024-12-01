@@ -4,24 +4,24 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page__header header">
-      <nav class="page-nav header__nav toggle-menu--close">
+      <nav class="page-nav header__nav">
         <div class="header__wrapper">
           <a class="header__link" href="index.html">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/tablet/logo-pic.png 1x, img/tablet/logo-pic@2x 2x">
+              <source media="(min-width: 1440px)" srcset="img/logo-pic.png 1x, img/logo-pic@2x 2x">
               <source media="(min-width: 768px)" srcset="img/logo-pic.png">
-              <img class="header__logo-image" src="./img/logo-mobile.svg" alt="Логотип бренда Cat Energy.">
+              <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип бренда Cat Energy.">
             </picture>
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo-text.svg">
-              <img class="header__logo-name" src="./img/energy.svg" alt="Текстовый логотип бренда Cat Energy.">
+              <img class="header__logo-name" src="img/energy.svg" alt="Текстовый логотип бренда Cat Energy.">
             </picture>
           </a>
-          <button class="page-nav__toggle" type="button">
+          <button class="page-nav__toggle page-nav--opened" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -37,7 +37,7 @@
             </a>
           </li>
           <li class="page-nav__item">
-            <a class="page-nav__title page-nav__title--active" href="form.html">
+            <a class="page-nav__title page-nav__title--active page-nav__underline" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -107,7 +107,7 @@
               <label class="form-data__label" for="email">
                 E-mail:&lowast;
               </label>
-              <input class="form-data__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required:>
+              <input class="form-data__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
               <svg class="form-data__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -116,7 +116,7 @@
               <label class="form-data__label" for="tel">
                 Телефон:&lowast;
               </label>
-              <input class="form-data__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
+              <input class="form-data__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
               <svg class="form-data__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -156,7 +156,7 @@
               <button class="form-information__button button">
                 Отправить заявку
               </button>
-              <span class="form-information__span"> &#42 &#8211; Обязательные поля</span>
+              <span class="form-information__span"> &#42; &#8211; Обязательные поля</span>
             </li>
           </ul>
         </section>
@@ -213,6 +213,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
